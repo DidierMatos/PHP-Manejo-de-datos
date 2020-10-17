@@ -21,6 +21,15 @@
             $url = Validate::url('platzi.com');
             $this->assertFalse($url);
         }
+
+        public function test_password()
+        {
+            $password = Validate::password('1234567');
+            $this->assertTrue($password);
+
+            $password = Validate::password('1234@');
+            $this->assertFalse($password);
+        }
     }
 
 
