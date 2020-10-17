@@ -12,5 +12,17 @@
             $email = Validate::email('didieryt77@@gmail.com');
             $this->assertFalse($email);
         }
+
+        public function test_url()
+        {
+            $url = Validate::url('https://platzi.com');
+            $this->assertTrue($url);
+
+            $url = Validate::url('platzi.com');
+            $this->assertFalse($url);
+        }
     }
+
+
+
 ?>
