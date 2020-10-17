@@ -38,7 +38,6 @@
     echo implode(', ', $courses);
     //javascript, php, laravel
 
-
     #Eliminar espacios.
     $course = "   Curso de PHP          ";
     echo trim($course);
