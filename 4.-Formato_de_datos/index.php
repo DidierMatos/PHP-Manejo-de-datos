@@ -19,9 +19,12 @@
     $textHTML = "<h1>PHP es UN LENGUAJE</h1>";
     // echo strip_tags($textHTML);
 
+    //MONOBYTE Y MULTIBYTE
     $text2 = "PHP es UN LENGUAJE, año 2020, programación";
-    // echo strtoupper($text2);
-    echo mb_strtoupper($text2);
+    // echo strtoupper($text2); //mono que no afecta los carácteres ñ o ó
+    echo mb_strtoupper($text2); //multi
+
+    
 
 
 
